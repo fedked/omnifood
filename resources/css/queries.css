@@ -16,7 +16,7 @@
 
     .long-copy {
         width: 70%;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .steps-box { margin-top: 10px; }
@@ -39,7 +39,6 @@
     }
 
     .plan-price { font-size: 300% }
-
     .contact-form { width: 80%; }
 
 
