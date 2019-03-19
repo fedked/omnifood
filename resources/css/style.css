@@ -1,8 +1,6 @@
-/* 
-Orange color: #e67e22
-
-
-*/
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
 
 * {
     margin: 0;
@@ -10,13 +8,15 @@ Orange color: #e67e22
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', 'sans-serif';
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLeibilitiy;
+    overflow-x: hidden;
 }
 
 .clearfix{zoom: 1}
@@ -152,7 +152,6 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-
 }
 
 .btn-full:link,
@@ -290,7 +289,7 @@ header {
 }
 
 /*----------------------------*/
-/* HOW IT WORKS */
+/* HOW IT WORKS SECTION */
 /*----------------------------*/
 
 .section-steps {
@@ -328,7 +327,7 @@ header {
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
-    /* display: inline-block; */
+    display: inline-block;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -421,10 +420,6 @@ cite img {
     box-shadow: 0 2px 2px #efefef;
 }
 
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-}
-
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
@@ -432,8 +427,16 @@ cite img {
     border-top-right-radius: 5px;
 }
 
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
 .plan-box div:last-child {
     text-align: center;
+    border: 0;
 }
 
 .plan-price {
@@ -479,11 +482,15 @@ textarea {
     border: 1px solid #ccc;
 }
 
+textarea {
+    height: 100px;
+}
+
 input [type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
-*:focus { outline: none;}
+*:focus {outline: none;}
 
 /*----------------------------*/
 /* FOOTER */
